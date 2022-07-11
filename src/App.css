@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+  height: 10vh;
+  line-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background: none;
+  border: none;
+}
+i {
+  font-size: 20px;
+  cursor: pointer;
+}
+ul {
+  display: inline-block;
+}
+ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+h1 {
+  color: cornflowerblue;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+}
+.toggleBtn {
+  display: none;
+  color: cornflowerblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 800px) {
+  .socialIcons {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .toggleBtn {
+    display: block;
+  }
+  .list {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+    transition: 0.5s;
+  }
+  ul li,
+  ul {
+    display: block;
   }
 }
